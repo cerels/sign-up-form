@@ -1,48 +1,112 @@
-body {
-    background-color: aqua;
-    display: flex;
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'Norse-Bold';  /* Give your font a name */
+    src: url("/Norse-Bold.otf") format("opentype")
 }
+
+html, body {
+    min-height:100%; 
+    height:100%; 
+    max-height:100%;
+    display: flex;
+    margin: 0;
+    column-gap: 5%;
+    
+}
+
 
 .left {
-    height: 100vh;
+    min-height:100vh; 
     flex: 1;
+    display: flex;
     background-color: black;
-    padding: 0;
-    margin: 0;
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg"); 
   background-size: cover; 
-  background-position: center;
 }
 
-.left img {
-    height: 100%;
-    object-fit: cover
-}
+
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+  .card-body img{
+
+    height: 80%;
+    width: auto;
+    
+  }
+  .card-paragraph {
+    flex-wrap: wrap;
+    font-family: 'Norse-Bold', Arial, sans-serif;
+    font-size: 10vh;
+    color: white;
+  }
 
 .right {
-    height: 100vh;
+    min-height:100vh; 
+    height:100vh; 
+    max-height:100vh;
     display: flex;
     flex-direction: column;
     flex: 2;
-    background-color: white;
+    box-sizing: border-box;
     
 
 }
 
 .intro {
     flex: 1;
-    margin-top: 20%;
-    background-color: blueviolet;
+    align-content:flex-end;
+    padding-bottom: 20px;
+    width: 80%;
 }
 
 .signup {
     flex: 1;
-    background-color: rgb(125, 226, 43);
+    background-color:rgba(250, 235, 215, 0.322);
+    
 }
-.send {
+
+form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+
+}
+.account-actions {
     flex: 1;
-    background-color: rgb(226, 141, 43);
-    margin-bottom: 20%;
-}
+    text-align: flex-end;  /* Center elements horizontally */
+  }
+  
+  .account-actions button {
+    background-color: #596d48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  /* Indicate clickable button */
+  }
+  
+  .account-actions a {
+    color: #596d48;
+    text-decoration: none;  /* Remove underline from hyperlink */
+  }
+  
+  .account-actions a:hover {
+    text-decoration: underline;  /* Underline on hover for better feedback */
+  }
+  

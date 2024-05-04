@@ -8,12 +8,61 @@
 </head>
 <body>
     <div class="left">
+        <div class="card-body">
+        <img src="images/odin-lined.png" alt="Odin logo">
+         <p class="card-paragraph">Odin</p>
+            
+       </div>
     </div>
 
     <div class="right">
-        <div class="intro"></div>
-        <div class="signup"></div>
-        <div class="send"></div>
+        <div class="intro">
+            <b>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br>
+                <br> You <i>know</i> you want to.
+            </b>
+        </div>
+        <div class="signup">
+            <h3>Let's do this!</h3>
+            <form class="form">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+            </form>
+            
+        </div>
+        
+        <div class="account-actions">
+            <button type="button" id="createAccountBtn">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
